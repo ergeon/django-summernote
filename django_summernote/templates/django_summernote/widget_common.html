@@ -43,6 +43,10 @@ function initSummernote_{{ id_safe }}() {
                         $nEditor = $sn.next();
                         $nCodable = $nEditor.find('.note-codable');
                         recalcHeight($nEditor);
+                        var imageURLButton = $('.note-group-image-url');
+                        if (imageURLButton.length) {
+                            imageURLButton.hide();
+                        }
 
 {% if iframe %}
                         // Resize again when the height of note-toolbar changed
