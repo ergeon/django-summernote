@@ -15,8 +15,9 @@ class SummernoteTextFormField(fields.CharField):
 
     def to_python(self, value):
         value = super().to_python(value)
+        # In bleach 6.x+ 'styles' parameter is removed
         return bleach.clean(
-            value, tags=ALLOWED_TAGS, attributes=ATTRIBUTES, styles=STYLES)
+            value, tags=ALLOWED_TAGS, attributes=ATTRIBUTES)
 
 
 class SummernoteTextField(models.TextField):
@@ -26,5 +27,6 @@ class SummernoteTextField(models.TextField):
 
     def to_python(self, value):
         value = super().to_python(value)
+        # In bleach 6.x+ 'styles' parameter is removed
         return bleach.clean(
-            value, tags=ALLOWED_TAGS, attributes=ATTRIBUTES, styles=STYLES)
+            value, tags=ALLOWED_TAGS, attributes=ATTRIBUTES)
