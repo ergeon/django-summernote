@@ -5,6 +5,7 @@ ALLOWED_TAGS = [
     'abbr', 'acronym', 'b', 'blockquote', 'code', 'strike', 'u', 'sup', 'sub',
 ]
 
+# In bleach 6.x+, styles are handled as attributes
 STYLES = [
     'background-color', 'font-size', 'line-height', 'color', 'font-family'
 ]
@@ -12,4 +13,8 @@ STYLES = [
 ATTRIBUTES = {
     '*': ['style', 'align', 'title', ],
     'a': ['href', ],
+    # Add style attributes for bleach 6.x compatibility
+    'span': {'style': STYLES},
+    'p': {'style': STYLES},
+    'div': {'style': STYLES},
 }

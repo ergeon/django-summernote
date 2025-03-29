@@ -1,3 +1,9 @@
+0.9.0.0
+--------
+ - Add Django 4.2 compatibility
+ - Drop support for Python 3.6, 3.7, 3.8
+ - Drop support for Django < 3.2
+
 0.8.20.0
 --------
  - Hotfix for wrong font urls
