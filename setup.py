@@ -12,6 +12,7 @@ CLASSIFIERS = [
     'Framework :: Django :: 3.2',
     'Framework :: Django :: 4.1',
     'Framework :: Django :: 4.2',
+    'Framework :: Django :: 5.2',
     'Intended Audience :: Developers',
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python :: 3',
@@ -19,6 +20,7 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
     'Programming Language :: Python',
     'Topic :: Internet :: WWW/HTTP',
     'Topic :: Software Development :: Libraries :: Python Modules',
@@ -39,7 +41,7 @@ setup(
     description='Summernote plugin for Django',
     classifiers=CLASSIFIERS,
 
-    install_requires=['django', 'bleach'],
+    install_requires=['django>=3.2,<6.0', 'bleach'],
     extras_require={
         'dev': [
             'django-dummy-plug',

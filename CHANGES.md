@@ -1,3 +1,8 @@
+0.9.1.0
+--------
+ - Add Django 5.2 compatibility
+ - Add Python 3.12 to the test matrix
+
 0.9.0.0
 --------
  - Add Django 4.2 compatibility
