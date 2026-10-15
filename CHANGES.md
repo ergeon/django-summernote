@@ -3,6 +3,7 @@
  - Add Django 5.2 compatibility
  - Add Python 3.12 to the test matrix
  - Require Python 3.12+ (drop 3.9, 3.10, 3.11)
+ - Require Django 5.2+
 
 0.9.0.0
 --------
