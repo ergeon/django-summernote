@@ -9,9 +9,6 @@ CLASSIFIERS = [
     'Development Status :: 4 - Beta',
     'Environment :: Web Environment',
     'Framework :: Django',
-    'Framework :: Django :: 3.2',
-    'Framework :: Django :: 4.1',
-    'Framework :: Django :: 4.2',
     'Framework :: Django :: 5.2',
     'Intended Audience :: Developers',
     'License :: OSI Approved :: MIT License',
@@ -39,7 +36,7 @@ setup(
     classifiers=CLASSIFIERS,
 
     python_requires='>=3.12',
-    install_requires=['django>=3.2,<6.0', 'bleach'],
+    install_requires=['django>=5.2,<6.0', 'bleach'],
     extras_require={
         'dev': [
             'django-dummy-plug',
